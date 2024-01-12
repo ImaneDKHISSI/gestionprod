@@ -37,7 +37,7 @@ public void updateProduit(final Produit produit) {
             existingProduit.setQuantite(produit.getQuantite());
         } else {
             // Handle the case where the product to be updated does not exist
-            throw new IllegalArgumentException("Product not found for update: " + produit.getId());
+            throw new IllegalArgumentException("Produit non trouver: " + produit.getId());
         }
     }
     

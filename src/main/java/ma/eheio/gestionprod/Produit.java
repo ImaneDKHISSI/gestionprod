@@ -47,8 +47,14 @@ package ma.eheio.gestionprod;
 	        this.prix = prix;
 	        this.quantite = quantite;
 	    }
+	    //To String Method
 
-	    // Getters and setters follow a consistent order
+	    @Override
+		public String toString() {
+			return "Produit [id=" + id + ", nom=" + nom + ", prix=" + prix + ", quantite=" + quantite + "]";
+		}
+
+		// Getters and setters follow a consistent order
 	    public Long getId() {
 	        return id;
 	    }
@@ -86,10 +92,5 @@ package ma.eheio.gestionprod;
 	        }
 	        this.quantite = quantite;
 	    }
-	    //To String Method
-	    @Override
-	public String toString() {
-	    return "Produit{id=" + id + ", nom='" + nom + "', prix=" + prix + ", quantite=" + quantite + '}';
-	}
 	}
 
